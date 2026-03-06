@@ -1,8 +1,8 @@
 a=10
 type(a)
 
-a=input()
-b=input()
+a=input("Enter number 1: ")
+b=input("Enter number 2: ")
 c=a+b
 print(c)
 type(c)
@@ -26,8 +26,8 @@ print(id(30))
 #id of b and 60 is same
 print(id(60))
 
-n1=int(input())
-n2=int(input())
+n1=int(input("Enter number 1: "))
+n2=int(input("Enter number 2: "))
 class Add:
   @staticmethod
   def result(n1,n2):
@@ -44,12 +44,13 @@ print(a,b,c)
 result=a,b,c
 type(result)
 
+#number of variable greater than number of values
 # x,y,z=10,20
-# #number of variable greater than number of values
+#throws error - not enough values to unpack
 
 #number of variable less than number of values
-x,y,z=1,2,3,4
-
+#x,y,z=1,2,3,4
+#throws error - too many values to unpack
 
 num=20
 #num is a name given to a variable
