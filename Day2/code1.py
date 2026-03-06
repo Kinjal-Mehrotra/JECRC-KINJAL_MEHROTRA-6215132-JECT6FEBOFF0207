@@ -151,10 +151,10 @@ print(id(10101))
 
 s="PYTHON"
 s[-1]
-s[-1]='n'
+# s[-1]='n' - string is immutable
 
 t1=(1,2,3)
-t1[2]=0
+# t1[2]=0 - tuples are immutable
 
 #slicing
 s='hello python'
