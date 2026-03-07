@@ -61,6 +61,10 @@ class Car:
         cls.gears=new_gears
         print(f'No of gears: {cls.gears}')
 
+    @staticmethod
+    def greeting(name):
+        print(f"Good Morning {name}")
+
 #using a constructor , we used less line of codes to create object properties
 tata=Car(True,'Level 5','2L',12,100000)
 tata.update_gears(5)
@@ -70,7 +74,7 @@ print("Tata properties after updation")
 tata.update_base_speed('60kmph')
 tata.update_max_speed('140kmph')
 tata.display_properties()
-
+tata.greeting('Kinjal')
 
 
 mahindra=Car(True,'Level 4','4L',20,250000)
