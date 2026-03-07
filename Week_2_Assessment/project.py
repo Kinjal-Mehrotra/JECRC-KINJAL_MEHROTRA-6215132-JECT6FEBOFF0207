@@ -22,15 +22,16 @@ class TODO:
         
         while(i<len(self.todos)):
             if (self.todos[i]['id']==id):
+                print(f"Removed to-do with id: {self.todos[i]['id']}")
                 self.todos.pop(i)
-                print("Removed to-do with id: {self.todos[i]['id']}")
+                return
             i+=1
     
     def display_todos(self):
         print("To-Do list")
         
         for element in self.todos:
-            if element['is_completed']==True:
+            if element['is_completed']:
                 print(f"{element['desc']}  {element['id']}  (Completed) ")
             else:
                 print(f"{element['desc']}  {element['id']}  (Pending) ")
@@ -41,15 +42,16 @@ class TODO:
             if (self.todos[i]['id']==id):
                 self.todos[i]['desc']=new_desc
                 print(f"Updated todo , id: {self.todos[i]['id']}")
-
+                return
             i+=1
 
     def toggle_mark_as_completed(self, id):
         i=0
         while(i<len(self.todos)):
             if (self.todos[i]['id']==id):
-                self.todos[i]['is_completed']=~self.todos[i]['is_completed']
+                self.todos[i]['is_completed']=not self.todos[i]['is_completed']
                 print(f"Todo marked as completed , id: {self.todos[i]['id']}")
+                return
             i+=1
     
     
