@@ -15,6 +15,9 @@ class D(B):
 class E(C):
     e=100
 
+class F(D,E):
+    pass
+
 obj1=C()
 print(obj1.a)
 
@@ -22,3 +25,6 @@ obj2=E()
 print(obj2.e)
 print(obj2.c)
 
+obj3=F()
+print(obj3.d)
+print(obj3.e)
